@@ -5,11 +5,23 @@ This repository contains code for Function Transformation Tasks created by Marti
 
 The repository contains a folder for each task. Each folder includes the manuscript in which the task was first described, along with all files (preregistration, scripts, analyses) to run the studies in the manuscript. The folder also contains a script where the task is isolated.
 
+*Folder Car Race Task:*
+- Draft manuscript
+- Folder *data + R scripts* contains raw data and R-scripts for processing and analyses
+- Folder *preregistrations* contains reregistration documents for four experiments
+- Folder *materials* contains json files to run four experiments. These be downloaded and subsequently uploaded and run on https://labjs.felixhenninger.com/
+
+*Folder Bubbles Task:*
+- Preregistration documents for four experiments + publisher accepted version of Finn & De Houwer (2021) JEAB manuscript.
+- Folder *data + R scripts* contains raw data and R-scripts for processing and analyses
+- Folder *labjs scripts* contains json files to run four experiments. These be downloaded and subsequently uploaded and run on https://labjs.felixhenninger.com/
+
 ## Task description
 
 ### Car Race Task
 
 The procedure was designed to establish Crel and Cfunc functions for stimuli and assess their efficacy in specifying derived transformations of stimulus functions. The procedure can be decomposed into five phases: phase 1) establishing Crels for the relations of same and different; phase 2) testing Crels for the relations of same and different; phase 3) establishing selective action of Cfuncs for speed and direction on transformations of functions via relations of same and different; phase 4) testing the selective action of Crels and Cfuncs established in the previous phase; phase 5) testing for the generalization of the experimentally established Crels and Cfuncs. All measures were programmed in java script using lab.js (Henninger et al., 2019).
+
 
 **Phases 1 and 2: establishing and testing Crels.** <br>
 In phase 1 a matching to sample (MTS) procedure was employed to establish Crels for the relations of same and different. The MTS began with the instruction “In this task you will see a sequence of screens. On these screens you must respond by selecting either E or I on your keyboard. Learn how to respond accurately. Then respond as accurately as you can.” Before each block of trials, they were instructed “Respond as accurately as you can. If your accuracy is less than 85% this phase will begin again”. Each trial began with a 300ms stimulus onset interval (SOI). The sample stimulus, the word *“SAME”* or *“DIFFERENT”*, appeared at the top center of the screen, and the comparison stimuli, the symbols ◼ and ▼, were presented at the bottom left and bottom right of the screen. Arbitrary shapes were established as Crels because this is standard practice in research on derived stimulus relations, and thus the experimental analysis reported here might complement and extend existing RFT-based experimental analyses of derived stimulus relations. The locations of the stimuli were counterbalanced across trials. Selections for the left and right comparisons were made with the ‘E’ and ‘I’ keys. Immediately after correct selections the message “Correct!” appeared in green text at the center of the screen for 500ms. The message *“Wrong!”* appeared in red text in the same location for 1000ms after incorrect responses. The MTS presented up to five 30 trial blocks, and terminated early if participants achieved an accuracy score ≥ 17/20 across the previous 20 trials in a block.
@@ -54,3 +66,34 @@ On a given trial in the generalization test a pair of stimuli were presented in 
 
 ### Bubble-Clicking Task
 
+**Phase 1: walkthrough and calibration of bubble-clicking tasks** <br>
+The bubbles task began with a walkthrough that described the task to participants. Participants were informed they would complete a series of trials involving choices between tasks, and completion of the chosen
+tasks. They were shown an example selection screen the various elements of which are illustrated; the source, the miniature source task, the task options and positions they may occupy relative to the source, the
+presence of symbols indicating how the task options compare to the source task. The symbols for which Crel and Cfunc functions were to be established were not presented in the walkthrough. The calibration
+phase began immediately after the walkthrough. The purpose of calibration was to ensure that changes in the number of bubbles within the task bore upon the likelihood of earning points. During calibration
+participants completed a series of seven trials in which the source task was the only available option. The first trial presented seven bubbles to be clicked within the 5 s time window. Participants were provided up to 10 opportunities to complete the first trial. Each subsequent trial increased the number of bubbles to be clicked within this time window by two. The sequence terminated when the participant failed to complete a trial. The number of bubbles clicked in the final successful trial was the calibrated set point for that participant. This calibrated set point could be 7, 9, 11, 13, 15, 17, or 19.
+
+**Phase 2: establishing Crels and Cfuncs** <br>
+In this part of the task participants were provided with choices between two tasks that differed along task relevant dimensions (i.e., number of bubbles, number of points; Fig. 1a). On each trial participants first viewed the miniature source task that displayed a number of moving bubbles that varied across trials around the calibrated set point for that participant (i.e., the calibrated set point ± 1; Fig. 1b) and a
+message indicating the number of points on offer (i.e., 50 points ± 5 points) that appeared immediately above the miniature source task (see Fig. 1b). The source task could not be selected, but the two other task
+options displayed on each selection screen could. The task options were presented at an equal distance from the source task, and can appear at 30˚, 90 ˚, 150 ˚, 210 ˚, 270 ˚, and 330 ˚angles relative to the source task. The precise location of each option, and its angle relative to the source task was counterbalanced across trials. The manner in which the properties of each task differed from the source task was specified by Crels and Cfuncs appearing on the arrows between the source stimulus and the stimuli representing the alternative task options (see Fig. 1c). In this experiment the Crel and Cfunc stimuli were drawn from natural language (i.e., “more points”, “fewer points”, “more bubbles”, and “fewer bubbles”). On each trial there was an optimal choice. To ensure this is the case on every trial participants were offered choices between the options making up the following pairs: more points or less points, more points or more bubbles, less bubbles or less points, and less bubbles or
+more bubbles. Note that the first option in each pair was deemed the optimal choice. Upon selecting a task option participants were exposed to a post-choice feedback screen (see Fig. 1d). This screen was presented for between 3 and 10 s and could be terminated by clicking a continue button after 3 s. The screen displayed a miniature version of each of the alternative task options including the number of bubbles and the message indicating the number of points on offer. The task the participant selected on the previous screen appeared within a green border. The purpose of this component was to facilitate discriminating the difference between the task options. Following the post-choice feedback screen participants were exposed to a bubbles task with the specified properties (e.g., Fig. 1e). Specifically, relative to the source, less bubbles meant a 50% decrease in bubbles, more bubbles meant a 50% increase in the number of bubbles, more points increased the number of points by 50, and less points decreased the number of points by 40. Responses in each trial were deemed correct and counted toward the calculation of training criterion when participants selected the optimal choice and successfully completed the selected bubble task. A trial was deemed incorrect if a participant failed to fulfill either of these criteria. This phase comprised five 30 trial blocks, and terminated either upon completion of these five
+blocks, or upon reaching the training criterion of 17 or more correct trials across the previous 20 trials within a block.
+
+**Phase 3: testing the established Crels and Cfuncs** <br>
+In this part of the task participants completed trials involving task options multiple steps from the source. The format of the selection screen in Phase 3 trials is illustrated in Fig. 1c and thus differs from the selection screen in Phase 2 as illustrated in Fig. 1a. The source was always presented in the center of the screen. The task options one step removed from the source appeared at opposite sides of the source at 90 ˚and 270 ˚, 30 ˚and 210 ˚, and 150 ˚and 330 ˚angles relative to the source respectively. This ensured that all task options appeared equidistant from the source. The exact locations, and natural language stimuli appearing between the task options were counterbalanced across trials. As in Phase 2, there was an optimal choice on each trial. The optimal choice was always two-steps removed from the source and involved
+either 25% fewer bubbles, 100 more points, or 50 more points and 50% fewer bubbles. Responses were deemed correct when the optimal choice had been selected and the related task was successfully completed. Unlike Phase 2 the post-choice feedback screen (Fig. 1d) was not presented in Phase 3. Phase 3 involved two 30 trial blocks and terminated upon completion of these trials. The experiment concluded with debriefing and payment.
+
+** Figure 1** <br>
+*Overview of the Bubbles Task* <br>
+<img width="1895" height="1248" alt="image" src="https://github.com/user-attachments/assets/9774feae-5a59-47d2-bc46-fa4638c620cf" /> <br>
+*Note. a) an example of the selection screen in Phase 1. b) an example of a miniature source task. c) an example of a selection screen in Phase 3 of Experiment
+2. d) an example of a post-choice feedback screen. e) example bubble-clicking task. All panels show the symbols presented in Experiment 2 instead of the natural
+language stimuli presented in Experiment 1. In Experiment 1 the natural language Crels and Cfuncs were “more points”, “fewer points”, “more bubbles”, and “fewer
+bubbles”. In Experiment 2 the novel Crels and Cfuncs were ◗, ■, ✦, and ▾.* 
+
+The above describes the procedure of Experiment 1 in the manuscript. The procedure of Experiment 2 was identical, except that novel stimuli for which both Crel and Cfunc functions were to be established were presented in place of natural language Crels and Cfuncs (i.e., ◗, ■, ✦, and ▾). The functional roles of these novel stimuli differed across the two counterbalancing conditions in Experiment 2. In counterbalancing
+condition 1 these functional roles were: ◗ = more points, ■ = more bubbles, ✦ = less bubbles, and ▾ = less points. In counterbalancing condition 2 these functional roles were: ◗ = less bubbles, ■ = less
+points, ✦ = more points, and ▾ = more bubbles. In another difference from Experiment 1 for one condition the training phase involved presenting post-choice feedback for between 3 and 10 s after each selection
+screen. This feedback was not presented during testing. After completing training and testing on the bubble task participants were asked to indicate what they thought each of the Crel and Cfunc symbols presented
+in Experiment 2 meant.
